@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import Upper from "./Components/Upper/Upper";
 
 function App() {
-
-  return (
-    <>
- 
-    </>
-  )
+    return (
+        <>
+            <Upper />
+        </>
+    );
 }
 
-export default App
+export default App;

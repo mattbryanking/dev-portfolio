@@ -21,8 +21,8 @@ const Blob = () => {
                         x2="0%"
                         y2="100%"
                     >
-                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />{" "}
-                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />{" "}
+                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />
+                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />
                     </linearGradient>
                 </defs>
 
@@ -58,8 +58,8 @@ const Blob = () => {
                         x2="0%"
                         y2="100%"
                     >
-                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />{" "}
-                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />{" "}
+                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />
+                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />
                     </linearGradient>
                 </defs>
 
@@ -95,8 +95,8 @@ const Blob = () => {
                         x2="0%"
                         y2="100%"
                     >
-                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />{" "}
-                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />{" "}
+                        <stop offset="0%" style={{ stopColor: "#A4BFEF" }} />
+                        <stop offset="100%" style={{ stopColor: "#6A93CB" }} />
                     </linearGradient>
                 </defs>
 

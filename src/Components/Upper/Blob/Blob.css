@@ -19,14 +19,15 @@
     z-index: -1;
 }
 
-.Blob:hover {
+.title:hover .Blob {
     transform: scale(1.3);
 }
 
-.Blob:hover svg:nth-child(2) {
+.title:hover .Blob svg:nth-child(2) {
     filter: blur(70px) brightness(115%);
 }
 
-.Blob:hover svg:nth-child(3) {
-    filter: blur(100vw) brightness(130%);
+.title:hover .Blob svg:nth-child(3) {
+    filter: blur(100vw) brightness(150%);
 }
+

@@ -13,27 +13,24 @@
     align-items: center;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .box {
+.title .box {
     transform-style: preserve-3d;
-    transform: perspective(600px);
+    transform: perspective(1500px);
     display: flex;
+
+    animation: typewriter 0.5s steps(40) 1 forwards;
+    animation-delay: calc((var(--i) + 6) * 0.5s);
 }
 
-.container .box p {
+.title .box p {
     position: absolute;
     color: white;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: "Source Code Pro", monospace;
     text-transform: uppercase;
     white-space: nowrap;
     transform-style: preserve-3d;
-    transform: translate(calc((var(--i) * 45px)), -50%) translateZ(100px);
+    transform: translate(calc((var(--i) * 54px)), -50%) translateZ(140px);
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -45,7 +42,44 @@
     transition: transform 0.25s ease;
 }
 
-.title:hover .container .box p {
+.title:hover .box p {
     transform: translate(-50%, -50%) rotateY(calc(var(--i) * 7deg))
-        translateZ(350px);
+        translateZ(470px);
+}
+
+.title .box p:last-child {
+    width: 1.5rem;
+    height: 4rem;
+    background-color: white;
+
+    transform: translate(calc((var(--i) * 54px + 1rem)), calc(-50% + 0.2rem))
+        translateZ(140px);
+
+    animation: blink 1s infinite;
+}
+
+.title:hover .box p:last-child {
+    transform: translate(-50%, calc(-50% + 0.2rem))
+        rotateY(calc(var(--i) * 7deg)) translateZ(470px);
+}
+
+@keyframes blink {
+    0%,
+    49%,
+    100% {
+        opacity: 1;
+    }
+    50%,
+    99% {
+        opacity: 0;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%;
+    }
 }

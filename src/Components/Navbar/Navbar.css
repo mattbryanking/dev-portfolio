@@ -1,0 +1,39 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 96vw;
+    height: 5%;
+    transform: translateX(-50%);
+    background-color: #10161e;
+    border-bottom: 0.1rem solid white;
+}
+
+.Navbar p, .Navbar a {
+    font-family: "Imbue", serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 1.25rem;
+    text-decoration: none;
+}
+
+.Navbar .left p {
+    padding-right: 2rem;
+}
+
+.Navbar .right a {
+    padding-left: 2rem;
+}
+
+.Navbar > div {
+    display: flex;
+}
+
+.Navbar > .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

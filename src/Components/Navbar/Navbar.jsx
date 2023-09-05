@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <div className="Navbar">
             <div className="left">
-                <p>Work</p>
+                <p>Projects</p>
                 <p>About</p>
                 <p>Contact</p>
             </div>

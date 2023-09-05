@@ -9,13 +9,16 @@
     transform: translateX(-50%);
     background-color: #10161e;
     border-bottom: 0.1rem solid white;
+
+    z-index: 100;
 }
 
-.Navbar p, .Navbar a {
+.Navbar p,
+.Navbar a {
     font-family: "Imbue", serif;
     color: white;
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 1.25rem;
     text-decoration: none;
 }

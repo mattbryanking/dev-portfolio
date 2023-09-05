@@ -42,8 +42,8 @@
 }
 
 .ProjectBar p {
-    font-family: "Imbue", serif;
-    font-size: 2rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.3rem;
     font-weight: 500;
     color: white;
     text-transform: uppercase;

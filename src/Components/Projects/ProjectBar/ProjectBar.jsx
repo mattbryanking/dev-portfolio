@@ -8,7 +8,7 @@ function ProjectBar({ date, title }) {
                     <h2 className="project-date">{date}</h2>
                     <h1 className="project-title">{title}</h1>
                 </div>
-                <p className="project-view">View</p>
+                <p className="project-view">View Repo</p>
             </div>
         </div>
     );

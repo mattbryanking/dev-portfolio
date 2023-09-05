@@ -1,14 +1,76 @@
+import { useState, useEffect } from "react";
 import "./Blob.css";
 
 const Blob = () => {
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [filterProps, setFilterProps] = useState({
+        blur2: 50,
+        brightness2: 100,
+        brightness3: 0,
+    });
+
+    useEffect(() => {
+        function handleMouseMove(event) {
+            const x = (window.innerWidth / 2 - event.clientX) / 30;
+            const y = (window.innerHeight / 2 - event.clientY) / 30;
+
+            const distanceFromCenter = Math.sqrt(x * x + y * y);
+            const maxDistanceFromCenter = Math.sqrt(
+                Math.pow(window.innerWidth / 2 / 50, 2) +
+                    Math.pow(window.innerHeight / 2 / 50, 2)
+            );
+
+            const blur2 =
+                50 +
+                20 *
+                    (1 -
+                        Math.max(
+                            0,
+                            distanceFromCenter / maxDistanceFromCenter - 0.4
+                        ) /
+                            0.6);
+            const brightness2 =
+                100 +
+                15 *
+                    (1 -
+                        Math.max(
+                            0,
+                            distanceFromCenter / maxDistanceFromCenter - 0.4
+                        ) /
+                            0.6);
+
+            const brightness3 =
+                distanceFromCenter / maxDistanceFromCenter > 0.4
+                    ? 100 *
+                      (1 -
+                          (distanceFromCenter / maxDistanceFromCenter - 0.4) /
+                              0.6)
+                    : 100;
+
+            setFilterProps({ blur2, brightness2, brightness3 });
+            setPosition({ x: -x, y: -y });
+        }
+
+        window.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            window.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
+
     return (
-        <div className="Blob">
+        <div
+            className="Blob"
+            style={{
+                transform: `translate(${position.x}px, ${position.y}px)`,
+            }}
+        >
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="800"
+                height="800"
                 id="blobSvg"
                 style={{ opacity: 1 }}
                 transform="rotate(0)"
@@ -44,10 +106,13 @@ const Blob = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="800"
+                height="800"
                 id="blobSvg"
-                style={{ opacity: 1 }}
+                style={{
+                    opacity: 1,
+                    filter: `brightness(${filterProps.brightness2}%) blur(${filterProps.blur2}px)`,
+                }}
                 transform="rotate(0)"
             >
                 <defs>
@@ -81,10 +146,14 @@ const Blob = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="800"
+                height="800"
                 id="blobSvg"
-                style={{ opacity: 1 }}
+                style={{
+                    opacity: 1,
+                    filter: `blur(150vw) brightness(${filterProps.brightness3}%)`,
+                    zIndex: -1,
+                }}
                 transform="rotate(0)"
             >
                 <defs>

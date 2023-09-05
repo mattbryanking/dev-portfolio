@@ -1,85 +1,73 @@
 .Upper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: 100vh;
     width: 100vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.title h1 {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    color: white;
+    /* color: rgb(82, 82, 82); */
+    font-family: "Imbue", serif;
+    font-size: 13rem;
+
+    /* typewriter effect */
+    border-right: 0.6rem solid white;
+    margin: 0 auto;
+    animation: typing 1.75s steps(20, end) forwards,
+        blink 0.75s step-end infinite, hide 0s 1.75s forwards;
 }
 
-.title .box {
-    transform-style: preserve-3d;
-    transform: perspective(1500px);
-    display: flex;
-
-    animation: typewriter 0.5s steps(40) 1 forwards;
-    animation-delay: calc((var(--i) + 6) * 0.5s);
-}
-
-.title .box p {
+.title h2 {
     position: absolute;
     color: white;
-    font-size: 6rem;
-    font-family: "Source Code Pro", monospace;
-    text-transform: uppercase;
-    white-space: nowrap;
-    transform-style: preserve-3d;
-    transform: translate(calc((var(--i) * 54px)), -50%) translateZ(140px);
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    font-family: "Imbue", serif;
+    font-weight: 100;
+    text-align: center;
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    transition: transform 0.25s ease;
 }
 
-.title:hover .box p {
-    transform: translate(-50%, -50%) rotateY(calc(var(--i) * 7deg))
-        translateZ(470px);
+.title h2:first-of-type {
+    transform: translate(-50% , calc(-50% - 25rem));
 }
 
-.title .box p:last-child {
-    width: 1.5rem;
-    height: 4rem;
-    background-color: white;
-
-    transform: translate(calc((var(--i) * 54px + 1rem)), calc(-50% + 0.2rem))
-        translateZ(140px);
-
-    animation: blink 1s infinite;
+.title h2:last-of-type {
+    transform: translate(-50% , calc(25rem));
 }
 
-.title:hover .box p:last-child {
-    transform: translate(-50%, calc(-50% + 0.2rem))
-        rotateY(calc(var(--i) * 7deg)) translateZ(470px);
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 971px;
+    }
 }
 
 @keyframes blink {
-    0%,
-    49%,
-    100% {
-        opacity: 1;
+    from,
+    to {
+        border-color: transparent;
     }
-    50%,
-    99% {
-        opacity: 0;
+    50% {
+        border-color: white;
     }
 }
 
-@keyframes typewriter {
-    from {
-        max-width: 0;
-    }
+@keyframes hide {
     to {
-        max-width: 100%;
+        border: none;
     }
 }

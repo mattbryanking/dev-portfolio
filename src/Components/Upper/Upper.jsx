@@ -5,22 +5,12 @@ function Upper() {
     return (
         <div className="Upper">
             <div className="title">
+                <h2>Hello, I&apos;m</h2>
                 <Blob />
-                <div className="box">
-                    <p style={{ "--i": -6 }}>M</p>
-                    <p style={{ "--i": -5 }}>A</p>
-                    <p style={{ "--i": -4 }}>T</p>
-                    <p style={{ "--i": -3 }}>T</p>
-                    <p style={{ "--i": -2 }}>H</p>
-                    <p style={{ "--i": -1 }}>E</p>
-                    <p style={{ "--i": 0 }}>W</p>
-                    <p style={{ "--i": 1 }}> </p>
-                    <p style={{ "--i": 2 }}>K</p>
-                    <p style={{ "--i": 3 }}>I</p>
-                    <p style={{ "--i": 4 }}>N</p>
-                    <p style={{ "--i": 5 }}>G</p>
-                    <p style={{ "--i": 6 }}/>
-                </div>
+                <h1>Matthew King</h1>
+                <h2>
+                    a developer based in <br /> Grand Rapids, MI
+                </h2>
             </div>
         </div>
     );

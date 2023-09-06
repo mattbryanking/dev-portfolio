@@ -6,7 +6,7 @@
 }
 
 .ProjectBar:last-child {
-    border-bottom: .2rem solid white;
+    border-bottom: .15rem solid white;
 }
 
 .ProjectBar .wrapper {

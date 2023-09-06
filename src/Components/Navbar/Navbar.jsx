@@ -18,6 +18,13 @@ function Navbar() {
                     Github
                 </a>
                 <a>Resume</a>
+                <a
+                    href="mailto:matthewkingstudent@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Email
+                </a>
             </div>
         </div>
     );

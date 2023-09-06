@@ -8,9 +8,10 @@ function About() {
                 <p className="about-me">
                     My name is <span>Matthew King</span>. I&apos;m a developer,
                     psychologist, and student, currently studying at{" "}
-                    <span>Grand Valley State University</span>. I&apos;m passionate
-                    about intersecting technology and psychology, resulting in
-                    user-centric products that <span>better the world</span>.
+                    <span>Grand Valley State University</span>. I&apos;m
+                    passionate about intersecting technology with psychology,
+                    resulting in user-centric products that{" "}
+                    <span>empower individuals through intuitive design</span>.
                 </p>
                 <div className="about-tech">
                     <div>
@@ -18,8 +19,6 @@ function About() {
                         <p>React</p>
                         <p>React Native</p>
                         <p>Python</p>
-                        <p>Swift</p>
-                        <p>C</p>
                     </div>
                     <div>
                         <h4 className="tech-title">Technologies</h4>
@@ -29,21 +28,19 @@ function About() {
                         <p>Adobe Creative Suite</p>
                     </div>
                 </div>
-                <div className="about-tech">
+                <div className="about-edu">
                     <div>
-                        <h4 className="tech-title">Languages</h4>
-                        <p>React</p>
-                        <p>React Native</p>
-                        <p>Python</p>
-                        <p>Swift</p>
-                        <p>C</p>
+                        <h4 className="tech-title">Education</h4>
+                        <h5>Grand Valley State University</h5>
+                        <p>B.S. Computer Science</p>
+                        <p>Minor in Psychology</p>
+                        <p>Expected Dec. 2023</p>
                     </div>
                     <div>
-                        <h4 className="tech-title">Technologies</h4>
-                        <p>Node.js</p>
-                        <p>WordPress</p>
-                        <p>Git</p>
-                        <p>Adobe Creative Suite</p>
+                        <h4 className="tech-title">Experience</h4>
+                        <h5>Challenge Manufacturing</h5>
+                        <p>Application Developer Intern</p>
+                        <p>Jun. 2023 - Present</p>
                     </div>
                 </div>
             </div>

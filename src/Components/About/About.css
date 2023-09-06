@@ -5,7 +5,8 @@
     padding-bottom: 20rem;
 }
 
-.About p, .About h4 {
+.About p,
+.About h4 {
     color: #fff;
 }
 
@@ -19,14 +20,11 @@
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
     font-style: italic;
-
-    border-bottom: .15rem solid #fff;
 }
 
 .About .about-content {
     width: 96vw;
     display: flex;
-    padding: 3rem 0;
 }
 
 .About .about-me {
@@ -40,8 +38,8 @@
 .About .about-me span {
     color: rgb(255, 255, 255);
     text-decoration: underline;
-    text-decoration-thickness: .25rem;
-    text-underline-offset: .6rem;
+    text-decoration-thickness: 0.25rem;
+    text-underline-offset: 0.6rem;
 }
 
 .About .about-tech {
@@ -61,7 +59,34 @@
 
 .About .about-tech p {
     font-family: "Imbue", serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
     font-weight: 600;
+    width: 16rem;
 }
 
+.About .about-edu, .About .about-exp {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About .about-edu h5, .About .about-exp h5 {
+    color: white;
+    font-family: "Imbue", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.About .about-edu p, .About .about-exp p {
+    font-family: "Imbue", serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a8a8a8;
+    line-height: 2rem;
+    width: 25rem;
+}

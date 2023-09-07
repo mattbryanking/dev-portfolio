@@ -1,6 +1,27 @@
 import { useState, useEffect } from "react";
 import "./Blob.css";
 
+const throttle = (func, limit) => {
+    let lastFunc;
+    let lastRan;
+    return function () {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+            func.apply(context, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function () {
+                if (Date.now() - lastRan >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        }
+    };
+};
+
 const Blob = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [filterProps, setFilterProps] = useState({
@@ -10,7 +31,7 @@ const Blob = () => {
     });
 
     useEffect(() => {
-        function handleMouseMove(event) {
+        const handleMouseMove = throttle((event) => {
             const x = (window.innerWidth / 2 - event.clientX) / 30;
             const y = (window.innerHeight / 2 - event.clientY) / 30;
 
@@ -49,7 +70,7 @@ const Blob = () => {
 
             setFilterProps({ blur2, brightness2, brightness3 });
             setPosition({ x: -x, y: -y });
-        }
+        }, 50);
 
         window.addEventListener("mousemove", handleMouseMove);
 

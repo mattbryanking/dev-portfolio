@@ -9,6 +9,10 @@
     border-bottom: .1rem solid white;
 }
 
+.ProjectBar a {
+    text-decoration: none;
+}
+
 .ProjectBar .wrapper {
     display: flex;
     align-items: flex-end;

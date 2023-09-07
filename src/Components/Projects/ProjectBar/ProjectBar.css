@@ -14,7 +14,7 @@
     align-items: flex-end;
     justify-content: space-between;
 
-    padding: 2.25rem 0;
+    padding: 1.7rem 0;
 }
 
 .ProjectBar .left-bar {
@@ -24,26 +24,26 @@
 
 .ProjectBar h2 {
     font-family: "Imbue", serif;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-weight: 500;
     font-style: italic;
     color: white;
     text-transform: uppercase;
-    margin-right: 1.5rem;
+    margin-right: 1.1rem;
 }
 
 .ProjectBar h1 {
     font-family: "Imbue", serif;
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 500;
     color: white;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
     text-transform: uppercase;
 }
 
 .ProjectBar p {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 500;
     color: white;
     text-transform: uppercase;

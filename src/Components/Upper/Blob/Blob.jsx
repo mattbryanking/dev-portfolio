@@ -69,8 +69,8 @@ const Blob = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="450"
+                height="450"
                 id="blobSvg"
                 style={{ opacity: 1 }}
                 transform="rotate(0)"
@@ -106,8 +106,8 @@ const Blob = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="450"
+                height="450"
                 id="blobSvg"
                 style={{
                     opacity: 1,
@@ -146,8 +146,8 @@ const Blob = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
-                width="600"
-                height="600"
+                width="450"
+                height="450"
                 id="blobSvg"
                 style={{
                     opacity: 1,

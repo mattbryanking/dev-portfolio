@@ -12,11 +12,11 @@
 
 .About h3 {
     width: 96vw;
-    padding-top: 10rem;
-    padding-bottom: 1.8rem;
+    padding-top: 7.5rem;
+    padding-bottom: 1.35rem;
 
     color: white;
-    font-size: 1.9rem;
+    font-size: 1.45rem;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
     font-style: italic;
@@ -30,16 +30,16 @@
 .About .about-me {
     width: 50%;
     font-family: "Imbue", serif;
-    font-size: 5rem;
+    font-size: 3.75rem;
     color: #ffffff;
-    padding-right: 15rem;
+    padding-right: 11rem;
 }
 
 .About .about-me span {
     color: rgb(255, 255, 255);
     text-decoration: underline;
-    text-decoration-thickness: 0.25rem;
-    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 0.19rem;
+    text-underline-offset: 0.45rem;
 }
 
 .About .about-tech {
@@ -52,17 +52,17 @@
 
 .About .tech-title {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1.2rem;
+    font-size: .9rem;
     text-transform: uppercase;
-    padding-bottom: 1rem;
+    padding-bottom: .75rem;
 }
 
 .About .about-tech p {
     font-family: "Imbue", serif;
-    font-size: 2.3rem;
-    line-height: 2.6rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
     font-weight: 600;
-    width: 16rem;
+    width: 11rem;
 }
 
 .About .about-edu, .About .about-exp {
@@ -76,17 +76,17 @@
 .About .about-edu h5, .About .about-exp h5 {
     color: white;
     font-family: "Imbue", serif;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .About .about-edu p, .About .about-exp p {
     font-family: "Imbue", serif;
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     text-transform: uppercase;
     font-weight: 600;
     color: #a8a8a8;
-    line-height: 2rem;
-    width: 25rem;
+    line-height: 1.5rem;
+    width: 19rem;
 }

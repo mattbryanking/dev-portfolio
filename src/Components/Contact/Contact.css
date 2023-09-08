@@ -59,13 +59,18 @@
     grid-column: auto / span 2;
 }
 
+.form .form-bottom-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: auto / span 2;
+}
+
 .form input,
 .form textarea {
     height: 100%;
-    width: 90%;
     margin: 0;
     padding: 0;
-   
     resize: none;
     background-color: transparent;
     border: none;
@@ -77,6 +82,10 @@
     font-style: italic;
 }
 
+.form input {
+    width: 90%;
+}
+
 .form textarea {
     width: 95%;
 }
@@ -85,5 +94,25 @@
 .form textarea:focus {
     outline: none;
     border-bottom: 1.5px solid white;
-    margin-bottom: -1.5px;
+    margin-bottom: -1.5px !important;
+}
+
+.form button {
+    background-color: white;
+    height: 2rem;
+    width: 13%;
+    border: none;
+
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.form p {
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+
+    padding-left: 2rem;
 }

@@ -11,7 +11,7 @@ function About() {
                     <span>Grand Valley State University</span>. I&apos;m
                     passionate about intersecting technology with psychology,
                     resulting in user-centric products that{" "}
-                    <span>empower individuals through intuitive design</span>.
+                    <span> empower individuals through intuitive design</span>.
                 </p>
                 <div className="about-tech">
                     <div>
@@ -19,13 +19,15 @@ function About() {
                         <p>React</p>
                         <p>React Native</p>
                         <p>Python</p>
+                        <p>SQL</p>
                     </div>
                     <div>
                         <h4 className="tech-title">Technologies</h4>
                         <p>Node.js</p>
+                        <p>Vite</p>
+                        <p>Github</p>
                         <p>WordPress</p>
-                        <p>Git</p>
-                        <p>Adobe Creative Suite</p>
+                    
                     </div>
                 </div>
                 <div className="about-edu">

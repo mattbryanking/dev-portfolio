@@ -1,0 +1,10 @@
+.Footer {
+    width: 96vw;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+    color: white;
+    border-top: 0.1rem solid white;
+    text-align: center;
+    font-family: "Imbue", serif;
+    text-transform: uppercase;
+}

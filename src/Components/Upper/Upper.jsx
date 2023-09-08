@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import Blob from "./Blob/Blob";
 import "./Upper.css";
 
-function Upper() {
+const Upper = forwardRef((props, ref) => {
     return (
-        <div className="Upper">
+        <div className="Upper" ref={ref}>
             <div className="title">
                 <h2>Hello, I&apos;m</h2>
                 <Blob />
@@ -14,6 +15,8 @@ function Upper() {
             </div>
         </div>
     );
-}
+});
+
+Upper.displayName = "Upper";
 
 export default Upper;

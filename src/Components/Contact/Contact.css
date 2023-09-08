@@ -33,6 +33,7 @@
     color: #ffffff;
     text-transform: uppercase;
     font-style: italic;
+    font-weight: 400;
 }
 
 .contact-content .icon-container {
@@ -115,15 +116,43 @@
 }
 
 .form button {
-    background-color: white;
+    position: relative;
+    background-color: transparent;
+    color: white;
     height: 2rem;
     width: 13%;
-    border: none;
-
+    border: 0.1rem solid white;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
-
     cursor: pointer;
+
+    overflow: hidden;
+}
+
+.form button::before {
+    content: "Submit";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: black;
+    top: 0;
+    left: -15%;
+    width: 130%;
+    height: 100%;
+    border: none;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 10;
+
+    background-color: white;
+    transition: clip-path 0.3s;
+    clip-path: polygon(0 0, 10% 0, 0% 100%, 0% 100%);
+}
+
+.form button:hover::before {
+    clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
 }
 
 .form p {

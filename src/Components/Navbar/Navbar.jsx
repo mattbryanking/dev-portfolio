@@ -1,14 +1,16 @@
 import "./Navbar.css";
 
-function Navbar() {
+const Navbar = ({ scroll, refs }) => {
     return (
         <div className="Navbar">
             <div className="left">
-                <p>Projects</p>
-                <p>About</p>
-                <p>Contact</p>
+                <p onClick={() => scroll(refs.projectsRef)}>Projects</p>
+                <p onClick={() => scroll(refs.aboutRef)}>About</p>
+                <p onClick={() => scroll(refs.contactRef)}>Contact</p>
             </div>
-            <p className="center">Matthew King</p>
+            <p onClick={() => scroll(refs.upperRef)} className="center">
+                Matthew King
+            </p>
             <div className="right">
                 <a
                     href="https://github.com/mattbryanking"
@@ -28,6 +30,6 @@ function Navbar() {
             </div>
         </div>
     );
-}
+};
 
 export default Navbar;

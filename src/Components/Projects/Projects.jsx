@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import ProjectBar from "./ProjectBar/ProjectBar.jsx";
 import "./Projects.css";
 
-function Projects() {
+const Projects = forwardRef((props, ref) => {
     return (
-        <div className="Projects">
+        <div className="Projects" ref={ref}>
             <h3 className="title">Projects</h3>
             <div className="project-list">
                 <ProjectBar
@@ -31,6 +32,8 @@ function Projects() {
             </div>
         </div>
     );
-}
+});
+
+Projects.displayName = "Projects";
 
 export default Projects;

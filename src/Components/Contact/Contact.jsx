@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import "./Contact.css";
 
-function Contact() {
+const Contact = forwardRef((props, ref) => {
     const [status, setStatus] = useState("this doesn't do anything... yet :)");
     const [formData, setFormData] = useState({
         firstName: "",
@@ -46,7 +46,7 @@ function Contact() {
     };
 
     return (
-        <div className="Contact">
+        <div className="Contact" ref={ref}>
             <h3 className="title">Contact</h3>
             <div className="contact-content">
                 <div className="left-contact-container">
@@ -153,7 +153,7 @@ function Contact() {
                     </div>
                     <div className="form-bottom-row">
                         <button className="submit" type="submit">
-                            Submit
+                           Submit
                         </button>
                         <p className="form-status">{status}</p>
                     </div>
@@ -161,6 +161,8 @@ function Contact() {
             </div>
         </div>
     );
-}
+});
+
+Contact.displayName = "Contact";
 
 export default Contact;

@@ -23,14 +23,16 @@
     letter-spacing: .04rem;
     text-decoration: none;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
 .Navbar .left p {
-    padding-right: 1.15rem;
+    margin-right: 1.15rem;
 }
 
 .Navbar .right a {
-    padding-left: 1.15rem;
+    margin-left: 1.15rem;
 }
 
 .Navbar > div {

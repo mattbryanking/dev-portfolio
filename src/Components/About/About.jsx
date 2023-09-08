@@ -17,17 +17,33 @@ const About = forwardRef((props, ref) => {
                 <div className="about-tech">
                     <div>
                         <h4 className="tech-title">Languages</h4>
-                        <p>React</p>
-                        <p>React Native</p>
-                        <p>Python</p>
-                        <p>SQL</p>
+                        <span>
+                            <a className="underline-text">React</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">React Native</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">Python</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">SQL</a>
+                        </span>
                     </div>
                     <div>
                         <h4 className="tech-title">Technologies</h4>
-                        <p>Node.js</p>
-                        <p>Vite</p>
-                        <p>Github</p>
-                        <p>WordPress</p>
+                        <span>
+                            <a className="underline-text">Node.js</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">Vite</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">Github</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">WordPress</a>
+                        </span>
                     </div>
                 </div>
                 <div className="about-edu">

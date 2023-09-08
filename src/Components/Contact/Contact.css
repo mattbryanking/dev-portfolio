@@ -44,15 +44,8 @@
     width: 90%;
 }
 
-.contacts:hover span:not(:hover) h4,
-.contacts:hover span:not(:hover) p {
-    color: rgb(49, 49, 49);
-}
-
-.contacts h4,
-.contacts a,
-.contacts p {
-    transition: color 0.3s ease;
+.contact-content .icon-container a {
+    cursor: pointer;
 }
 
 .form {
@@ -147,7 +140,7 @@
     z-index: 10;
 
     background-color: white;
-    transition: clip-path 0.3s;
+    transition: clip-path 0.35s;
     clip-path: polygon(0 0, 10% 0, 0% 100%, 0% 100%);
 }
 

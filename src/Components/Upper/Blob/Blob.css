@@ -10,5 +10,5 @@
     top: 50%;
     left: 50%;
     will-change: transform;
-    transform: translate(calc(-50% + 2rem), -50%);
+    transform: translate(calc(-50% + 1.5rem), -50%);
 }

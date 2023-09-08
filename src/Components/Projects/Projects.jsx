@@ -23,7 +23,7 @@ function Projects() {
                 />
                 <ProjectBar
                     date={"2022"}
-                    title={"Swift Analysis"}
+                    title={"Multi-Lang Analysis"}
                     link={
                         "https://github.com/mattbryanking/Connect-4-Multi-Language"
                     }

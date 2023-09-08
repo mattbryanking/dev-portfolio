@@ -11,7 +11,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
     text-transform: uppercase;
     color: white;
     font-family: "Imbue", serif;

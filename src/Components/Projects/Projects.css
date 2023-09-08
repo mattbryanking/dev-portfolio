@@ -9,7 +9,7 @@
 .project-list:hover .ProjectBar:not(:hover) h1,
 .project-list:hover .ProjectBar:not(:hover) h2,
 .project-list:hover .ProjectBar:not(:hover) p {
-    color: rgb(49, 49, 49);
+    color: var(--unhighlighted-text)
 }
 
 .project-list .ProjectBar:hover h1,
@@ -27,7 +27,7 @@
     width: 96vw;
     padding-bottom: 1.4rem;
 
-    color: white;
+    color: var(--primary-text);
     font-size: 1.45rem;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;

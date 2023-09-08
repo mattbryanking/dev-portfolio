@@ -2,8 +2,8 @@
     width: 96vw;
     line-height: 2rem;
     margin-top: 3rem;
-    color: white;
-    border-top: 1px solid white;
+    color: var(--primary-text);
+    border-top: 1px solid var(--primary-text);
     text-align: center;
     font-family: "Imbue", serif;
     text-transform: uppercase;

@@ -8,7 +8,7 @@
     width: 96vw;
     padding-bottom: 1.35rem;
 
-    color: white;
+    color: var(--primary-text);
     font-size: 1.45rem;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
 .contact-content h1 {
     font-family: "Imbue", serif;
     font-size: 7rem;
-    color: #ffffff;
+    color: var(--primary-text);
     text-transform: uppercase;
     font-style: italic;
     font-weight: 400;
@@ -85,8 +85,8 @@
     resize: none;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid white;
-    color: white;
+    border-bottom: 1px solid var(--primary-text);
+    color: var(--primary-text);
     font-size: 1rem;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
@@ -104,21 +104,20 @@
 .form input:focus,
 .form textarea:focus {
     outline: none;
-    border-bottom: 1.5px solid white;
+    border-bottom: 1.5px solid var(--primary-text);
     margin-bottom: -1.5px !important;
 }
 
 .form button {
     position: relative;
     background-color: transparent;
-    color: white;
+    color: var(--primary-text);
     height: 2rem;
     width: 13%;
-    border: 0.1rem solid white;
+    border: 0.1rem solid var(--primary-text);
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
     cursor: pointer;
-
     overflow: hidden;
 }
 
@@ -128,7 +127,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    color: black;
+    color: var(--bg);
     top: 0;
     left: -15%;
     width: 130%;
@@ -138,8 +137,7 @@
     text-transform: uppercase;
     cursor: pointer;
     z-index: 10;
-
-    background-color: white;
+    background-color: var(--primary-text);
     transition: clip-path 0.35s;
     clip-path: polygon(0 0, 10% 0, 0% 100%, 0% 100%);
 }
@@ -149,9 +147,8 @@
 }
 
 .form p {
-    color: white;
+    color: var(--primary-text);
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
-
     padding-left: 2rem;
 }

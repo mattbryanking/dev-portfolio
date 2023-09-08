@@ -7,8 +7,8 @@
     width: 96vw;
     height: 2.8rem;
     transform: translateX(-50%);
-    background-color: #10161e;
-    border-bottom: 0.1rem solid white;
+    background-color: var(--bg);
+    border-bottom: 0.1rem solid var(--primary-text);
 
     z-index: 100;
 }
@@ -16,7 +16,7 @@
 .Navbar p,
 .Navbar a {
     font-family: "Imbue", serif;
-    color: white;
+    color: var(--primary-text);
     font-size: 1.35rem;
     font-weight: 300;
     margin-top: .75rem;

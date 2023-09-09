@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Upper from "./Components/Upper/Upper";
 import Projects from "./Components/Projects/Projects";
@@ -10,6 +10,10 @@ import "./App.css";
 const App = () => {
     const [dark, setDark] = useState(true);
     const [expanded, setExpanded] = useState(false);
+
+    const toggleTheme = () => {
+        setExpanded(true);
+    };
 
     useEffect(() => {
         if (expanded) {
@@ -35,9 +39,22 @@ const App = () => {
         };
     }, []);
 
-    const toggleTheme = () => {
-        setExpanded(true);
-    };
+    useEffect(() => {
+        const darkModeMediaQuery = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+        );
+        setDark(darkModeMediaQuery.matches);
+
+        const handlePref = (event) => {
+            setDark(event.matches);
+        };
+
+        darkModeMediaQuery.addEventListener("change", handlePref);
+
+        return () => {
+            darkModeMediaQuery.removeEventListener("change", handlePref);
+        };
+    }, []);
 
     return (
         <>
@@ -61,7 +78,7 @@ const App = () => {
                 onClick={!dark ? toggleTheme : () => {}}
             >
                 <Navbar />
-                <Upper />
+                <Upper darkMode={true}/>
                 <Projects />
                 <About />
                 <Contact />

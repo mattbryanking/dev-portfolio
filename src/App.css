@@ -1,6 +1,43 @@
 .App {
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    align-items: center;
+
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: var(--bg);
+}
+
+.App.clip {
+    clip-path: circle(1rem at 96vw calc(6rem + var(--scroll-y)));
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.App.clip * {
+    pointer-events: none;
+}
+
+.App.expanded {
+    clip-path: circle(1000% at 50% 50%);
+    transition: clip-path 3s ease-in-out;
+}
+
+.Light {
+    --bg: rgb(235, 235, 235);
+    --primary-text: rgb(45, 45, 45);
+    --secondary-text: rgb(137, 137, 137);
+    --unhighlighted-text: rgb(180, 180, 180);
+}
+
+.Dark {
+    --bg: rgb(16, 22, 30);
+    --primary-text: rgb(255, 255, 255);
+    --secondary-text: rgb(168, 168, 168);
+    --unhighlighted-text: rgb(49, 49, 49);
 }

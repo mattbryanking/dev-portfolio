@@ -2,12 +2,12 @@ import { forwardRef } from "react";
 import Blob from "./Blob/Blob";
 import "./Upper.css";
 
-const Upper = forwardRef((props, ref) => {
+const Upper = forwardRef(({ darkMode }, ref) => {
     return (
         <div className="Upper" ref={ref}>
             <div className="title">
                 <h2>Hello, I&apos;m</h2>
-                <Blob />
+                <Blob darkMode={darkMode} />
                 <h1>Matthew King</h1>
                 <h2>
                     a developer based in <br /> Grand Rapids, MI

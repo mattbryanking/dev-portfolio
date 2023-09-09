@@ -1,15 +1,5 @@
 :root {
-    --bg: rgb(16, 22, 30);
-    --primary-text: rgb(255, 255, 255);
-    --secondary-text: rgb(168, 168, 168);
-    --unhighlighted-text: rgb(49, 49, 49);
-
-    /* --bg: rgb(235, 235, 235);
-    --primary-text: rgb(45, 45, 45);
-    --secondary-text: rgb(137, 137, 137);
-    --unhighlighted-text: rgb(180, 180, 180); */
-
-    background-color: var(--bg);
+    --scroll-y: 0px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -104,8 +94,6 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    /* color: rgb(56, 56, 56) !important;
-    border-color: rgb(55, 55, 55) !important; */
 }
 
 article,
@@ -178,9 +166,6 @@ textarea {
     /* Browsers have different default form fonts */
     font-size: 13px;
     font-family: Arial;
-
-    /* color: rgb(44, 44, 44) !important;
-    border-color: rgb(44, 44, 44) !important; */
 }
 
 /* Remove the stupid outer glow in Webkit */

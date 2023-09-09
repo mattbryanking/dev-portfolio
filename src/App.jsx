@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Upper from "./Components/Upper/Upper";
 import Projects from "./Components/Projects/Projects";
@@ -8,36 +8,66 @@ import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 const App = () => {
-    const upperRef = useRef(null);
-    const projectsRef = useRef(null);
-    const aboutRef = useRef(null);
-    const contactRef = useRef(null);
+    const [dark, setDark] = useState(true);
+    const [expanded, setExpanded] = useState(false);
 
-    const scroll = (ref) => {
-        const offset = 80;
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = ref.current.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
+    useEffect(() => {
+        if (expanded) {
+            setTimeout(() => {
+                setExpanded(false);
+                setDark(!dark);
+            }, 1000);
+        }
+    }, [expanded]);
 
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-        });
+    useEffect(() => {
+        const handleScroll = () => {
+            document.documentElement.style.setProperty(
+                "--scroll-y",
+                `${window.scrollY}px`
+            );
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const toggleTheme = () => {
+        setExpanded(true);
     };
 
     return (
-        <div className="App">
-            <Navbar
-                scroll={scroll}
-                refs={{ upperRef, projectsRef, aboutRef, contactRef }}
-            />
-            <Upper ref={upperRef} />
-            <Projects ref={projectsRef} />
-            <About ref={aboutRef} />
-            <Contact ref={contactRef} />
-            <Footer />
-        </div>
+        <>
+            <div
+                className={`App Light ${dark ? "clip" : ""} ${
+                    expanded ? "expanded" : ""
+                }`}
+                onClick={dark ? toggleTheme : () => {}}
+            >
+                <Navbar />
+                <Upper />
+                <Projects />
+                <About />
+                <Contact />
+                <Footer />
+            </div>
+            <div
+                className={`App Dark ${!dark ? "clip" : ""} ${
+                    expanded ? "expanded" : ""
+                }`}
+                onClick={!dark ? toggleTheme : () => {}}
+            >
+                <Navbar />
+                <Upper />
+                <Projects />
+                <About />
+                <Contact />
+                <Footer />
+            </div>
+        </>
     );
 };
 

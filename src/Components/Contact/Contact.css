@@ -48,6 +48,10 @@
     cursor: pointer;
 }
 
+.contact-content .icon-container svg {
+    fill: var(--primary-text);
+}
+
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

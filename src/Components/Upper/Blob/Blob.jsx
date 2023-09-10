@@ -30,8 +30,6 @@ const Blob = ({ darkMode }) => {
         brightness3: 0,
     });
 
-    console.log(darkMode);
-
     useEffect(() => {
         const handleMouseMove = throttle((event) => {
             const x = (window.innerWidth / 2 - event.clientX) / 30;

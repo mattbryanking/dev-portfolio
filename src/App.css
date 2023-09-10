@@ -14,18 +14,30 @@
 }
 
 .App.clip {
-    clip-path: circle(1rem at 96vw calc(6rem + var(--scroll-y)));
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.App.clip * {
-    pointer-events: none;
+    clip-path: circle(0rem at 96.75vw calc(5rem + var(--scroll-y)));
+    z-index: 200;
 }
 
 .App.expanded {
     clip-path: circle(1000% at 50% 50%);
     transition: clip-path 3s ease-in-out;
+}
+
+.App .theme-toggle-wrapper {
+    position: fixed;
+    top: 3.5rem;
+    right: calc(2vw - .5rem);
+    padding: .5rem;
+
+    background-color: var(--bg);
+    border-radius: 50%;
+
+    cursor: pointer;
+    z-index: 300;
+}
+
+.App .theme-toggle-wrapper > svg {
+    fill: var(--primary-text);
 }
 
 .Light {

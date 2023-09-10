@@ -10,7 +10,7 @@
     background-color: var(--bg);
     border-bottom: 0.1rem solid var(--primary-text);
 
-    z-index: 100;
+    z-index: 500;
 }
 
 .Navbar p,

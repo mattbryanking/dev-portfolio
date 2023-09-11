@@ -24,7 +24,13 @@ const App = () => {
     };
 
     const scrollTo = (ref) => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
+        const yOffset = 5 * 16;
+        const y =
+            ref.current.getBoundingClientRect().top +
+            window.pageYOffset -
+            yOffset;
+
+        window.scrollTo({ top: y, behavior: "smooth" });
     };
 
     const toggleTheme = () => {

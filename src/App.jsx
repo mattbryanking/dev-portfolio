@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Upper from "./Components/Upper/Upper";
 import Projects from "./Components/Projects/Projects";
@@ -10,6 +10,22 @@ import "./App.css";
 const App = () => {
     const [dark, setDark] = useState(true);
     const [expanded, setExpanded] = useState(false);
+
+    const upperRef = useRef(null);
+    const projectsRef = useRef(null);
+    const aboutRef = useRef(null);
+    const contactRef = useRef(null);
+
+    const refs = {
+        upperRef,
+        projectsRef,
+        aboutRef,
+        contactRef,
+    };
+
+    const scrollTo = (ref) => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     const toggleTheme = () => {
         setExpanded(true);
@@ -26,17 +42,17 @@ const App = () => {
     }, [expanded]);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleClipScroll = () => {
             document.documentElement.style.setProperty(
                 "--scroll-y",
                 `${window.scrollY}px`
             );
         };
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleClipScroll);
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleClipScroll);
         };
     }, []);
 
@@ -75,11 +91,11 @@ const App = () => {
                         <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
                     </svg>
                 </div>
-                <Navbar />
-                <Upper />
-                <Projects />
-                <About />
-                <Contact />
+                <Navbar scroll={scrollTo} refs={refs} />
+                <Upper ref={upperRef} />
+                <Projects ref={projectsRef} />
+                <About ref={aboutRef} />
+                <Contact ref={contactRef} />
                 <Footer />
             </div>
             <div
@@ -98,11 +114,11 @@ const App = () => {
                         <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
                     </svg>
                 </div>
-                <Navbar />
-                <Upper darkMode={true} />
-                <Projects />
-                <About />
-                <Contact />
+                <Navbar scroll={scrollTo} refs={refs} />
+                <Upper ref={upperRef} darkMode={true} />
+                <Projects ref={projectsRef} />
+                <About ref={aboutRef} />
+                <Contact ref={contactRef} />
                 <Footer />
             </div>
         </>

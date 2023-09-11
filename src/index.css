@@ -1,5 +1,13 @@
 :root {
     --scroll-y: 0px;
+
+    background: rgb(16, 22, 30);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background: rgb(235, 235, 235);
+    }
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

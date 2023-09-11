@@ -32,12 +32,12 @@
     background-color: var(--bg);
     border-radius: 50%;
 
-    cursor: pointer;
     z-index: 300;
 }
 
 .App .theme-toggle-wrapper > svg {
     fill: var(--primary-text);
+    cursor: pointer;
 }
 
 .Light {

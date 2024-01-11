@@ -52,12 +52,12 @@ const About = forwardRef((props, ref) => {
                         <h5>Grand Valley State University</h5>
                         <p>B.S. Computer Science</p>
                         <p>Minor in Psychology</p>
-                        <p>Expected Dec. 2023</p>
+                        <p>Graduated Dec. 2023</p>
                     </div>
                     <div>
                         <h4 className="tech-title">Experience</h4>
                         <h5>Challenge Manufacturing</h5>
-                        <p>Application Developer Intern</p>
+                        <p>Application Developer</p>
                         <p>Jun. 2023 - Present</p>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ const About = forwardRef((props, ref) => {
                             <a className="underline-text">React</a>
                         </span>
                         <span>
-                            <a className="underline-text">React Native</a>
+                            <a className="underline-text">Swift</a>
                         </span>
                         <span>
                             <a className="underline-text">Python</a>
@@ -36,13 +36,13 @@ const About = forwardRef((props, ref) => {
                             <a className="underline-text">Node.js</a>
                         </span>
                         <span>
-                            <a className="underline-text">Vite</a>
+                            <a className="underline-text">XCode</a>
                         </span>
                         <span>
-                            <a className="underline-text">Github</a>
+                            <a className="underline-text">ExpressJS</a>
                         </span>
                         <span>
-                            <a className="underline-text">WordPress</a>
+                            <a className="underline-text">Azure</a>
                         </span>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const About = forwardRef((props, ref) => {
                     <div>
                         <h4 className="tech-title">Experience</h4>
                         <h5>Challenge Manufacturing</h5>
-                        <p>Application Developer</p>
+                        <p>Full Stack Developer</p>
                         <p>Jun. 2023 - Present</p>
                     </div>
                 </div>

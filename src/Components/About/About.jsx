@@ -7,12 +7,12 @@ const About = forwardRef((props, ref) => {
             <h3 className="title">About</h3>
             <div className="about-content">
                 <p className="about-me">
-                    My name is <span>Matthew King</span>. I&apos;m a developer,
-                    psychologist, and student, currently studying at
-                    <span>Grand Valley State University</span>. I&apos;m
-                    passionate about intersecting technology with psychology,
-                    resulting in user-centric products that
-                    <span> empower individuals through intuitive design</span>.
+                    My name is <span>Matthew King</span>. I&apos;m a full stack
+                    developer who studied Computer Science and Psychology at
+                    Grand Valley State University. I&apos;m passionate about
+                    intersecting technology with psychology, resulting in
+                    user-centric products that{" "}
+                    <span>empower individuals through intuitive design</span>.
                 </p>
                 <div className="about-tech">
                     <div>
@@ -39,7 +39,7 @@ const About = forwardRef((props, ref) => {
                             <a className="underline-text">XCode</a>
                         </span>
                         <span>
-                            <a className="underline-text">Express</a>
+                            <a className="underline-text">Git</a>
                         </span>
                         <span>
                             <a className="underline-text">Azure</a>

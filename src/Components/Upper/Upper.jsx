@@ -10,7 +10,7 @@ const Upper = forwardRef(({ darkMode }, ref) => {
                 <Blob darkMode={darkMode} />
                 <h1>Matthew King</h1>
                 <h2>
-                    a developer based in <br /> Grand Rapids, MI
+                    a full-stack developer based <br /> in Grand Rapids, MI
                 </h2>
             </div>
         </div>

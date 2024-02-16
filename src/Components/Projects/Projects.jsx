@@ -9,13 +9,13 @@ const Projects = forwardRef((props, ref) => {
             <div className="project-list">
                 <ProjectBar
                     date={"2023"}
-                    title={"Raycasting Arena"}
-                    link={"https://github.com/mattbryanking/ARENA"}
-                />
+                    title={"Native iOS Camera"}
+                    link={"https://github.com/mattbryanking/iOSCameraClone"}
+                />{" "}
                 <ProjectBar
                     date={"2023"}
-                    title={"React Wordle Clone"}
-                    link={"https://github.com/mattbryanking/wordle"}
+                    title={"Raycasting Arena"}
+                    link={"https://github.com/mattbryanking/ARENA"}
                 />
                 <ProjectBar
                     date={"2022"}

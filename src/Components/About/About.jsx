@@ -8,10 +8,10 @@ const About = forwardRef((props, ref) => {
             <div className="about-content">
                 <p className="about-me">
                     My name is <span>Matthew King</span>. I&apos;m a developer,
-                    psychologist, and student, currently studying at{" "}
+                    psychologist, and student, currently studying at
                     <span>Grand Valley State University</span>. I&apos;m
                     passionate about intersecting technology with psychology,
-                    resulting in user-centric products that{" "}
+                    resulting in user-centric products that
                     <span> empower individuals through intuitive design</span>.
                 </p>
                 <div className="about-tech">
@@ -21,25 +21,25 @@ const About = forwardRef((props, ref) => {
                             <a className="underline-text">React</a>
                         </span>
                         <span>
-                            <a className="underline-text">Swift</a>
-                        </span>
-                        <span>
                             <a className="underline-text">Python</a>
                         </span>
                         <span>
-                            <a className="underline-text">SQL</a>
+                            <a className="underline-text">Swift</a>
+                        </span>
+                        <span>
+                            <a className="underline-text">C</a>
                         </span>
                     </div>
                     <div>
                         <h4 className="tech-title">Technologies</h4>
                         <span>
-                            <a className="underline-text">Node.js</a>
+                            <a className="underline-text">Node</a>
                         </span>
                         <span>
                             <a className="underline-text">XCode</a>
                         </span>
                         <span>
-                            <a className="underline-text">ExpressJS</a>
+                            <a className="underline-text">Express</a>
                         </span>
                         <span>
                             <a className="underline-text">Azure</a>
@@ -58,7 +58,7 @@ const About = forwardRef((props, ref) => {
                         <h4 className="tech-title">Experience</h4>
                         <h5>Challenge Manufacturing</h5>
                         <p>Full Stack Developer</p>
-                        <p>Jun. 2023 - Present</p>
+                        <p>April. 2023 - Present</p>
                     </div>
                 </div>
             </div>

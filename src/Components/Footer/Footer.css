@@ -1,14 +1,15 @@
 .Footer {
     width: 96vw;
     line-height: 2rem;
-    margin-top: 3rem;
+    font-size: .7rem;
+    font-weight: 400;
     color: var(--primary-text);
-    border-top: 1px solid var(--primary-text);
     text-align: center;
-    font-family: "Imbue", serif;
+    font-family: "IBM Plex Mono", serif;
     text-transform: uppercase;
     word-spacing: .5rem;
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: -2rem;
 }

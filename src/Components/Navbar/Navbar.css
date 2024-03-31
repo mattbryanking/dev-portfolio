@@ -8,19 +8,18 @@
     height: 2.8rem;
     transform: translateX(-50%);
     background-color: var(--bg);
-    border-bottom: 0.1rem solid var(--primary-text);
+    /* border-bottom: 0.1rem solid var(--primary-text); */
 
     z-index: 500;
 }
 
 .Navbar p,
 .Navbar a {
-    font-family: "Imbue", serif;
+    font-family: "IBM Plex Mono", serif;
     color: var(--primary-text);
-    font-size: 1.35rem;
-    font-weight: 300;
-    margin-top: 0.75rem;
-    letter-spacing: 0.04rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.85rem;
     text-decoration: none;
     text-transform: uppercase;
 

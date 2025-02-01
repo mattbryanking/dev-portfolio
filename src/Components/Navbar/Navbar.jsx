@@ -20,7 +20,7 @@ const Navbar = ({ scroll, refs }) => {
           Github
         </a>
         <a
-          href="/assets/MKing_Resume.pdf"
+          href="/MKing_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

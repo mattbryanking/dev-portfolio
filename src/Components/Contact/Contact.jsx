@@ -55,7 +55,7 @@ const Contact = forwardRef((props, ref) => {
           </h1>
           <div className="icon-container">
             <a
-              href="/assets/MKing_Resume.pdf"
+              href="/MKing_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

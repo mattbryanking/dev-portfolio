@@ -1,0 +1,32 @@
+.Mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg);
+  gap: 4vh;
+}
+
+.Mobile > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--primary-text);
+  text-align: center;
+  width: 75%;
+}
+
+.Mobile > .mobile-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+}
+
+.Mobile a {
+  fill: var(--primary-text);
+  width: 4rem;
+  height: 4rem;
+}
